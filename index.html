@@ -1,0 +1,9 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>GD Editor Lab</title><link rel="stylesheet" href="style.css"></head><body>
+<header><b>GD EDITOR LAB</b><button id="new">Новый</button><button id="imp">Импорт .gmd</button><button id="exp">Экспорт .gmd</button><button id="test">▶ Играть / Проверить</button><input id="file" type="file" accept=".gmd" hidden></header>
+<main><aside><h3>Объекты</h3><button class="tool" data-t="block">Блок</button><button class="tool" data-t="spike">Шип</button><button class="tool" data-t="orb">Орб</button><button class="tool" data-t="portal">Портал</button><button class="tool" data-t="trigger">Триггер</button>
+<h3>Режимы</h3><select id="mode"><option value="cube">Куб</option><option value="ship">Корабль</option><option value="ball">Шар</option><option value="ufo">НЛО</option><option value="wave">Волна</option><option value="robot">Робот</option><option value="spider">Паук</option></select>
+<h3>Скорость</h3><select id="speed"><option value="0.7">0.7x</option><option value="1" selected>1x</option><option value="1.3">1.3x</option><option value="1.7">1.7x</option><option value="2">2x</option><option value="3">3x</option></select>
+<h3>Музыка</h3><input id="song" placeholder="Song ID"></aside>
+<section><div id="bar">Редактор · клик — поставить объект</div><canvas id="c"></canvas></section>
+<aside><h3>Свойства</h3><div id="props">Нет выбора</div><label>Group ID <input id="group" type="number" value="0"></label><button id="applyGroup">Применить группу</button><h3>Проверка</h3><pre id="report">Нажми «Играть / Проверить».</pre></aside></main>
+<script src="app.js"></script></body></html>
